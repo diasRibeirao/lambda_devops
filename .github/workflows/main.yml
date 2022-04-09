@@ -1,6 +1,6 @@
 name: Deploy Lambda from GitHub Actions
 
-on: [push] 
+on: [push]
 
 jobs:
   deploy_source:
