@@ -33,4 +33,3 @@ jobs:
           aws_region: us-east-1
           function_name: devopsDeploy
           zip_file: bundle.zip
-          role: arn:aws:iam::989559845906:role/LabRole
