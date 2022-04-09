@@ -24,7 +24,7 @@ jobs:
       - name: zip
         uses: montudor/action-zip@v0.1.0
         with:
-          args: zip -qq -r ./lambda_devops.zip ./
+          args: zip -qq -r ./bundle.zip ./
       - name: default deploy
         uses: appleboy/lambda-action@master
         with:
@@ -32,5 +32,5 @@ jobs:
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws_region: us-east-1
           function_name: lambda_devops
-          zip_file: lambda_devops.zip
+          zip_file: bundle.zip
           role: arn:aws:iam::989559845906:role/LabRole
